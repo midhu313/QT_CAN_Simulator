@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewVehicleInfo</class>
+ <widget class="QDialog" name="NewVehicleInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>628</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="3" column="0">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Fuel Level</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Packet ID :</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_FL_PID</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_FL_PID"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_FL_startbyte"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>Start Byte:</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_FL_startbyte</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_FL_bytecount"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>Byte Count: </string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_FL_bytecount</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_FL_Formula"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>Formula: </string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_FL_Formula</cstring>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Vehicle Info</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="lblsv_make">
+        <property name="text">
+         <string>Make:</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_Make</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_Make"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblsv_model">
+        <property name="text">
+         <string>Model:</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_Model</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_Model"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblsv_year">
+        <property name="text">
+         <string>Year:</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_Year</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_Year"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonUpdate">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>Update</string>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="title">
+      <string>Brake Pedal</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_4">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>Packet ID :</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_BP_PID</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_BP_PID"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_BP_startbyte"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>Start Byte:</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_BP_startbyte</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_BP_bytecount"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>Byte Count: </string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_BP_bytecount</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_BP_Formula"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>Formula: </string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_BP_Formula</cstring>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="title">
+      <string>Seat Belt</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_6">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_21">
+        <property name="text">
+         <string>Packet ID :</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_SB_PID</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_SB_PID"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_SB_startbyte"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_22">
+        <property name="text">
+         <string>Start Byte:</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_SB_startbyte</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_SB_bytecount"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_23">
+        <property name="text">
+         <string>Byte Count: </string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_SB_bytecount</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_SB_Formula"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_24">
+        <property name="text">
+         <string>Formula: </string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_SB_Formula</cstring>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="title">
+      <string>Indicator</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_5">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>Packet ID :</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_IND_PID</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_IND_PID"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_IND_startbyte"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>Start Byte:</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_IND_startbyte</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_IND_bytecount"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_19">
+        <property name="text">
+         <string>Byte Count: </string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_IND_bytecount</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_IND_Formula"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_20">
+        <property name="text">
+         <string>Formula: </string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_IND_Formula</cstring>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Vehicle Speed</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Packet ID :</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_VS_PID</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_VS_PID"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_VS_startbyte"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Start Byte:</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_VS_startbyte</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_VS_bytecount"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Byte Count: </string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_VS_bytecount</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_VS_Formula"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Formula: </string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_VS_Formula</cstring>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Engine Speed</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Packet ID :</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_ES_PID</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_ES_PID"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Start Byte:</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_ES_startbyte</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_ES_startbyte"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Byte Count: </string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_ES_bytecount</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_ES_bytecount"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Formula: </string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEdit_ES_Formula</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_ES_Formula"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_Make</tabstop>
+  <tabstop>lineEdit_Model</tabstop>
+  <tabstop>lineEdit_Year</tabstop>
+  <tabstop>lineEdit_VS_PID</tabstop>
+  <tabstop>lineEdit_VS_startbyte</tabstop>
+  <tabstop>lineEdit_VS_bytecount</tabstop>
+  <tabstop>lineEdit_VS_Formula</tabstop>
+  <tabstop>lineEdit_ES_PID</tabstop>
+  <tabstop>lineEdit_ES_startbyte</tabstop>
+  <tabstop>lineEdit_ES_bytecount</tabstop>
+  <tabstop>lineEdit_ES_Formula</tabstop>
+  <tabstop>lineEdit_FL_PID</tabstop>
+  <tabstop>lineEdit_FL_startbyte</tabstop>
+  <tabstop>lineEdit_FL_bytecount</tabstop>
+  <tabstop>lineEdit_FL_Formula</tabstop>
+  <tabstop>lineEdit_BP_PID</tabstop>
+  <tabstop>lineEdit_BP_startbyte</tabstop>
+  <tabstop>lineEdit_BP_bytecount</tabstop>
+  <tabstop>lineEdit_BP_Formula</tabstop>
+  <tabstop>lineEdit_IND_PID</tabstop>
+  <tabstop>lineEdit_IND_startbyte</tabstop>
+  <tabstop>lineEdit_IND_bytecount</tabstop>
+  <tabstop>lineEdit_IND_Formula</tabstop>
+  <tabstop>lineEdit_SB_PID</tabstop>
+  <tabstop>lineEdit_SB_startbyte</tabstop>
+  <tabstop>lineEdit_SB_bytecount</tabstop>
+  <tabstop>lineEdit_SB_Formula</tabstop>
+  <tabstop>pushButtonUpdate</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
